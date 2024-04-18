@@ -1,0 +1,12 @@
+# Visual Studio
+.vs/
+
+# Build result
+CrudRequestAPI/bin/
+CrudRequestAPI/obj/
+
+#Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
