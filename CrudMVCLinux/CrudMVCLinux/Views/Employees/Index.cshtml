@@ -1,0 +1,36 @@
+@model IEnumerable<Crud.Core.Common.Entities.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1> Control de Empleados </h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create"> Crear Empleado </a>
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Area</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Salario</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.FirstSurname)</td>
+                <td>@Html.DisplayFor(modelItem => item.SecondSurname)</td>
+                <td>@Html.DisplayFor(modelItem => item.Area)</td>
+                <td>@Html.DisplayFor(modelItem => item.BirthDate)</td>
+                <td>@Html.DisplayFor(modelItem => item.Salary)</td>
+            </tr>
+        }
+    </tbody>
+</table>

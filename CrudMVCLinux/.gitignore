@@ -1,0 +1,19 @@
+# Visual Studio
+.vs/
+
+# Build result
+Core/BLL/Crud.Core.BLL/bin/
+Core/BLL/Crud.Core.BLL/obj/
+
+Core/Common/Crud.Core.Common/bin/
+Core/Common/Crud.Core.Common/obj/
+
+CrudMVCLinux/bin/
+CrudMVCLinux/obj/
+
+# Visual Studio Code
+.vscode
+
+
+# User-specific file
+*.suo
